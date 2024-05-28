@@ -17,7 +17,7 @@ crate = use_extension(
     "crate",
 )
 crate.from_cargo(
-    name = "crates",
+    name = "cxx_crates",
     cargo_lockfile = "//:Cargo.lock",
     manifests = [
         "//:Cargo.toml",
@@ -30,4 +30,4 @@ crate.from_cargo(
         "//:tests/ffi/Cargo.toml",
     ],
 )
-use_repo(crate, "crates")
+use_repo(crate, "cxx_crates")

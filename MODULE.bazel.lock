@@ -1,6 +1,6 @@
 {
   "lockFileVersion": 6,
-  "moduleFileHash": "f3b8c433196189e6d26dcfe53ed292774e217d172c755b3ba68f7b5650879c35",
+  "moduleFileHash": "6b1ea84f5641c343069e4f8c55fc7e45ba8ae7f206b66e293ec83a1b071e0990",
   "flags": {
     "cmdRegistries": [
       "https://bcr.bazel.build/"
@@ -68,14 +68,14 @@
             "column": 22
           },
           "imports": {
-            "crates": "crates"
+            "cxx_crates": "cxx_crates"
           },
           "devImports": [],
           "tags": [
             {
               "tagName": "from_cargo",
               "attributeValues": {
-                "name": "crates",
+                "name": "cxx_crates",
                 "cargo_lockfile": "//:Cargo.lock",
                 "manifests": [
                   "//:Cargo.toml",

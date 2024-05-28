@@ -28,11 +28,11 @@ rust_binary(
     data = ["gen/cmd/src/gen/include/cxx.h"],
     edition = "2021",
     deps = [
-        "@crates//:clap",
-        "@crates//:codespan-reporting",
-        "@crates//:proc-macro2",
-        "@crates//:quote",
-        "@crates//:syn",
+        "@cxx_crates//:clap",
+        "@cxx_crates//:codespan-reporting",
+        "@cxx_crates//:proc-macro2",
+        "@cxx_crates//:quote",
+        "@cxx_crates//:syn",
     ],
 )
 
@@ -55,9 +55,9 @@ rust_proc_macro(
     srcs = glob(["macro/src/**/*.rs"]),
     edition = "2021",
     deps = [
-        "@crates//:proc-macro2",
-        "@crates//:quote",
-        "@crates//:syn",
+        "@cxx_crates//:proc-macro2",
+        "@cxx_crates//:quote",
+        "@cxx_crates//:syn",
     ],
 )
 
@@ -67,13 +67,13 @@ rust_library(
     data = ["gen/build/src/gen/include/cxx.h"],
     edition = "2021",
     deps = [
-        "@crates//:cc",
-        "@crates//:codespan-reporting",
-        "@crates//:once_cell",
-        "@crates//:proc-macro2",
-        "@crates//:quote",
-        "@crates//:scratch",
-        "@crates//:syn",
+        "@cxx_crates//:cc",
+        "@cxx_crates//:codespan-reporting",
+        "@cxx_crates//:once_cell",
+        "@cxx_crates//:proc-macro2",
+        "@cxx_crates//:quote",
+        "@cxx_crates//:scratch",
+        "@cxx_crates//:syn",
     ],
 )
 
@@ -84,10 +84,10 @@ rust_library(
     edition = "2021",
     visibility = ["//visibility:public"],
     deps = [
-        "@crates//:cc",
-        "@crates//:codespan-reporting",
-        "@crates//:proc-macro2",
-        "@crates//:quote",
-        "@crates//:syn",
+        "@cxx_crates//:cc",
+        "@cxx_crates//:codespan-reporting",
+        "@cxx_crates//:proc-macro2",
+        "@cxx_crates//:quote",
+        "@cxx_crates//:syn",
     ],
 )
